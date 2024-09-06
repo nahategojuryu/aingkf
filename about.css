@@ -126,3 +126,39 @@ header h1 {
 .closeDialog:hover {
     color: #ddd;
 }
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .imageGallery {
+        grid-template-columns: repeat(1, 1fr); /* Two columns on smaller screens */
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .carousel img {
+        height: 200px; /* Adjust height for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .imageGallery {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+        gap: 5px;
+    }
+
+    .carousel img {
+        height: 150px; /* Further adjust height for smaller devices */
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+}
