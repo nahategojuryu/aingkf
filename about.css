@@ -1,0 +1,299 @@
+/* Apply a wood background to both body and header */
+body {
+    background-image: url('./images/about/wood.jpg');
+    background-position: center;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-image: url('./images/wood.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header h1 {
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    color: #f00;
+    text-align: center;
+    margin: 0;
+    -webkit-text-stroke: 1px #005207; /* Adds border effect */
+}
+
+/* Bio Section Styling */
+.bio-section {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio-section h2 {
+    font-size: 30px;
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    color: #f00;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bio-section h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    color: #f00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bio-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.bio-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #00a10d;
+}
+
+@media (max-width: 768px) {
+    .bio-section {
+        max-width: fit-content;
+        margin: 10%;
+    }
+}
+
+
+/* Style for the image gallery */
+.imageGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.imageGallery button {
+    position: relative;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.imageGallery img {
+    display: block;
+    width: 309px;
+    height: 309px; /* Set a fixed height to ensure uniformity */
+    object-fit: cover; /* Cover ensures the image covers the area while preserving its aspect ratio */
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imageGallery button:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the dialog */
+.dialog {
+    --size: 80%;
+    inline-size: var(--size);
+    max-inline-size: 600px;
+    border-radius: unset;
+    padding: 0;
+}
+
+.dialogContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: var(--size);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+    width: 100%;
+    height: 309px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Cover ensures the image covers the area while preserving its aspect ratio */
+    scroll-snap-align: center;
+}
+
+.controls {
+    position: fixed;
+    inset-block-start: calc(50% - 24px);
+    inset-inline: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 32px);
+}
+
+.controls-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.75rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.controls-btn:hover {
+    color: #ddd;
+}
+
+.closeDialog {
+    position: fixed;
+    inset-block-start: 16px;
+    inset-inline-end: 16px;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.closeDialog:hover {
+    color: #ddd;
+}
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .imageGallery {
+        grid-template-columns: repeat(1, 1fr); /* Two columns on smaller screens */
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .carousel img {
+        height: 200px; /* Adjust height for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .imageGallery {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+        gap: 5px;
+    }
+
+    .carousel img {
+        height: 150px; /* Further adjust height for smaller devices */
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #005207;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Ensure the footer spans the full width */
+    margin: 0; /* Remove any margin */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0; /* Remove margin */
+    padding: 0 20px; /* Optional: Padding on the sides */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.footer-section {
+    margin: 20px;
+    flex: 1;
+    min-width: 200px; /* Ensure sections don’t become too small */
+}
+
+.footer-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00a10d;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f00; /* Change color on hover */
+}
+
+.footer-bottom {
+    background-color: #4d0000;
+    font-size: 14px;
+    padding: 10px 0;
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
