@@ -61,6 +61,7 @@
         .section1 .shtext {
             display: block;
             margin-top: 20px;
+            font-size: 30px;
         }
         .section1 .seperator {
             border-bottom:1px solid #a2a2a2;
@@ -213,6 +214,35 @@
         .section2 .sec2contactform input[type="button"]:hover {
             background: #9b0000; /* Slightly darker green for hover effect */
         }
+
+        .affiliation p {
+            font-size: 100px;
+            color: red;
+            text-transform: uppercase;
+            font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+            font-weight: 1000;
+            animation: blinker 2s linear infinite;
+        }
+        .affiliation marquee {
+            font-size: 30px;
+            font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+            color:#00a10d
+        }
+        @keyframes blinker {
+                50% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                max-width: fit-content;
+                height: 500px;
+            }
+            .affiliation p{
+                font-size: 50px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -222,6 +252,31 @@
             <section class="section1 clearfix">
                 <div class="textcenter">
                     <span class="shtext">Contact Us</span>
+                    <span class="seperator"></span><br>
+
+                        <div class="affiliation">
+                            <p>AFFILIATION AVAILABLE</p>
+                            <marquee id="affiliation" behavior="alternate">STATE / DISTRICT / CLUB</marquee>
+                                    <script>
+                                        function adjustMarqueeSpeed() {
+                                        var marquee = document.getElementById('affiliation');
+                                        
+                                        // Check the screen width
+                                        if (window.innerWidth <= 768) {
+                                            // For mobile devices (screen width <= 768px)
+                                            marquee.setAttribute('scrollamount', '10'); // Slower speed
+                                        } else {
+                                            // For larger screens
+                                            marquee.setAttribute('scrollamount', '30'); // Faster speed
+                                        }
+                                        }
+                                    
+                                        // Adjust marquee speed on page load and window resize
+                                        window.onload = adjustMarqueeSpeed;
+                                        window.onresize = adjustMarqueeSpeed;
+                                    </script>
+                        </div>
+
                     <span class="seperator"></span>
                     <h1>Drop Us a Mail</h1>
                 </div>
@@ -229,8 +284,7 @@
         
             <section class="section2 clearfix">
                 <div class="col2 column1 first">
-                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14729.339475266735!2d88.376099!3d22.6413!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bcf4e572e99a435!2sWEST+BENGAL+GOJU-RYU+KARATE+DO+ASSOCIATION!5e0!3m2!1sen!2sin!4v1527590367725" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                    <center><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14729.339475266735!2d88.376099!3d22.6413!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bcf4e572e99a435!2sWEST+BENGAL+GOJU-RYU+KARATE+DO+ASSOCIATION!5e0!3m2!1sen!2sin!4v1527590367725" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></center>
                 <div class="col2 column2 last">
                     <div class="sec2innercont">
                         <div class="sec2addr">
