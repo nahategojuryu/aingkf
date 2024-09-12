@@ -338,11 +338,18 @@
 
     <div id="preloader"></div>
     <script>
-     var loader = document.getElementById("preloader");
-     window.addEventListener ("load", function(){
-         loader.style.display = "none";
-     })
-   </script>
+       var loader = document.getElementById("preloader");
+    
+       // Function to hide the preloader
+       function hidePreloader() {
+           loader.style.display = "none";
+       }
+    
+       window.addEventListener("load", function() {
+           // Delay hiding the preloader for 2 seconds
+           setTimeout(hidePreloader, 2000); // 2000 milliseconds = 2 seconds
+       });
+    </script>
 
 
 
