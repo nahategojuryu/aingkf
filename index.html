@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINGKF • HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="icon" href="./logo/aingkf-logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="preloader"></div>
+    <script>
+     var loader = document.getElementById("preloader");
+     window.addEventListener ("load", function(){
+         loader.style.display = "none";
+     })
+   </script>
+
+
+
+
+
+
+    <!-- Navbar -->
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;  <!-- Hamburger Icon -->
+        </div>
+
+        <ul id="menu">
+            <li><a href="./">Home</a></li>
+            <li><a href="./about.html" target=”_blank”>About Us</a></li>
+            <li><a href="https://www.wgka.in/blog" target=”_blank”>Events</a></li>
+            <li><a href="https://www.wgka.in/gallery" target=”_blank”>Gallery</a></li>
+            <li><a href="./contact.html" target=”_blank”>Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>ALL INDIA NAHA-TE GOJU-RYU <br> KARATE-DO FEDERATION</h1>
+        </div>
+
+        <img src="./images/home/header-image.jpg" alt="Okinawa Dojo of Life" class="main-image">
+
+        <div class="bottom-logos">
+            <img src="./logo/yuzen-budokai-logo.png" alt="Logo 1" class="logo">
+            <img src="./logo/indo-japan.jpg" alt="Logo 2" class="logo wide-logo">
+            <img src="./logo/aingkf-logo.png" alt="Logo 3" class="logo">
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+        var menu = document.getElementById("menu");
+        var icon = document.querySelector('.menu-icon');
+        menu.classList.toggle("active");
+        icon.classList.toggle("open");
+    }
+    </script>
+<br><br><br><br><br>
+<img src="./images/home/01.png" class="responsive-image"><br>
+<img src="./images/home/02.png" class="responsive-image"><br>
+<img src="./images/home/03.jpg" class="responsive-image"><br>
+<img src="./images/home/04.jpg" class="responsive-image"><br>
+<img src="./images/home/05.jpg" class="responsive-image"><br>
+<img src="./images/home/06.png" class="responsive-image"><br>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>About Us</h2>
+            <p>We are a leading organization in Karate-Do, providing top-notch training and events Since 1981</p>
+        </div>
+        <div class="footer-section">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html" target="_blank">About Us</a></li>
+                <li><a href="https://www.wgka.in/blog" target="_blank">Events</a></li>
+                <li><a href="https://www.wgka.in/gallery" target="_blank">Gallery</a></li>
+                <li><a href="./contact.html" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Follow Us</h2>
+            <div class="social-icons">                
+                <a href="https://www.facebook.com/subhendu.ray.165?mibextid=ZbWKwL" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nahategojuryu" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCkRvK7TSOVxcA0qBJvSDaEg" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 All India Naha-Te Goju-Ryu Karate-Do Federation. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
