@@ -11,13 +11,20 @@
 </head>
 <body>
 
-  <div id="preloader"></div>
-  <script>
-   var loader = document.getElementById("preloader");
-   window.addEventListener ("load", function(){
-       loader.style.display = "none";
-   })
- </script>
+    <div id="preloader"></div>
+    <script>
+       var loader = document.getElementById("preloader");
+    
+       // Function to hide the preloader
+       function hidePreloader() {
+           loader.style.display = "none";
+       }
+    
+       window.addEventListener("load", function() {
+           // Delay hiding the preloader for 3 seconds
+           setTimeout(hidePreloader, 2000); // 3000 milliseconds = 3 seconds
+       });
+    </script>
 
 
 
