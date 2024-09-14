@@ -74,11 +74,43 @@ header h1 {
 /* Style for the image gallery */
 .imageGallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 20px;
+    margin: 0 auto;
 }
 
+/* Responsive grid layout for the gallery */
+@media (min-width: 1200px) {
+    .imageGallery {
+        grid-template-columns: repeat(5, 1fr); /* 5 images per row */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .imageGallery {
+        grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .imageGallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .imageGallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    }
+}
+
+@media (max-width: 575px) {
+    .imageGallery {
+        grid-template-columns: 1fr; /* 1 image per row */
+    }
+}
+
+/* Image button styling */
 .imageGallery button {
     position: relative;
     padding: 0;
@@ -87,9 +119,10 @@ header h1 {
     cursor: pointer;
 }
 
+/* Styling for images within the gallery */
 .imageGallery img {
     display: block;
-    width: 309px;
+    width: 100%;
     height: 309px; /* Set a fixed height to ensure uniformity */
     object-fit: cover; /* Cover ensures the image covers the area while preserving its aspect ratio */
     border: 2px solid #fff;
@@ -171,42 +204,6 @@ header h1 {
 
 .closeDialog:hover {
     color: #ddd;
-}
-
-
-
-
-
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .imageGallery {
-        grid-template-columns: repeat(1, 1fr); /* Two columns on smaller screens */
-        gap: 10px;
-    }
-
-    header h1 {
-        font-size: 24px; /* Smaller font size for mobile */
-    }
-
-    .carousel img {
-        height: 200px; /* Adjust height for mobile */
-    }
-}
-
-@media (max-width: 480px) {
-    .imageGallery {
-        grid-template-columns: 1fr; /* Single column for very small screens */
-        gap: 5px;
-    }
-
-    .carousel img {
-        height: 150px; /* Further adjust height for smaller devices */
-    }
-
-    header h1 {
-        font-size: 20px;
-    }
 }
 
 
