@@ -3,113 +3,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AINGKF • HOME</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AINGKF • ABOUT US</title>
     <link rel="stylesheet" href="preloader.css">
     <link rel="icon" href="./logo/aingkf-logo.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="about.css" rel="stylesheet">
+    <script>
+        window.history.pushState({}, '', '/ABOUT');
+    </script>
 </head>
 <body>
 
-    <div id="preloader"></div>
-    <script>
-       var loader = document.getElementById("preloader");
-    
-       // Function to hide the preloader
-       function hidePreloader() {
-           loader.style.display = "none";
-       }
-    
-       window.addEventListener("load", function() {
-           // Delay hiding the preloader for 3 seconds
-           setTimeout(hidePreloader, 3000); // 3000 milliseconds = 3 seconds
-       });
-    </script>
+  <div id="preloader"></div>
+<script>
+   var loader = document.getElementById("preloader");
+
+   // Function to hide the preloader
+   function hidePreloader() {
+       loader.style.display = "none";
+   }
+
+   window.addEventListener("load", function() {
+       // Delay hiding the preloader for 2 seconds
+       setTimeout(hidePreloader, 3000); // 2000 milliseconds = 2 seconds
+   });
+</script>
 
 
 
 
 
 
-    <!-- Navbar -->
-    <nav>
-        <div class="menu-icon" onclick="toggleMenu()">
-            &#9776;  <!-- Hamburger Icon -->
-        </div>
 
-        <ul id="menu">
-            <li><a href="./">Home</a></li>
-            <li><a href="./about.html" target=”_blank”>About Us</a></li>
-            <li><a href="./black_belts.html" target=”_blank”>Black Belts 🥋</a></li>
-            <li><a href="./kata.html" target=”_blank”>Kata</a></li>
-            <li><a href="./kumite.html" target=”_blank”>Kumite</a></li>
-            <li><a href="https://www.wgka.in/blog" target=”_blank”>Events</a></li>
-            <li><a href="https://www.wgka.in/gallery" target=”_blank”>Gallery</a></li>
-            <li><a href="./contact.html" target=”_blank”>Contact Us</a></li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <div class="header">
-            <h1>ALL INDIA NAHA-TE GOJU-RYU <br> KARATE-DO FEDERATION</h1>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Open Props Image Gallery</title>
+        <meta name="description" content="Image gallery with View Transitions API & Scroll-Driven Animation" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      
+        <body>
+          <header>
+            <h1>About Us</h1>
+          </header>
 
-        <img src="./images/home/header-image.jpg" alt="Okinawa Dojo of Life" class="main-image">
+          <section class="bio-section">
+            <h2>Kyoshi SUBHENDU RAY</h2>
+            <h3>(Chief Instructor - INDIA)</h3>
+            <ul class="bio-list"><b>
+                <li>PRACTICING KARATE since 1981 TO TILL NOW</li>
+                <li>AS A PROFESSIONAL INSTRUCTOR since 1991</li>
+                <li>EX CHIEF INSTRUCTOR OF KOLKATA POLICE (UNARMED COMBAT)</li>
+                <li>REFEREE - A & JUDGE - A (K.I.O)</li>
+                <li>6 DAN BLACK BELT (JAPAN)</li>
+                <li>7 DAN BLACK BELT (K.I.O)</li>
+                <li>7 DAN BLACK BELT (W.K.F)</li>
+                <li>FOUNDER DIRECTOR - ALL INDIA NAHA-TE GOJU-RYU KARATE-DO FEDERATION</li>
+                <li>FOUNDER SECRETARY - WEST BENGAL GOJU-RYU KARATE-DO ASSOCIATION</li>
+              </b></ul>
+        </section>
 
-        <div class="bottom-logos">
-            <img src="./logo/yuzen-budokai-logo.png" alt="Logo 1" class="logo">
-            <img src="./logo/indo-japan.jpg" alt="Logo 2" class="logo wide-logo">
-            <img src="./logo/aingkf-logo.png" alt="Logo 3" class="logo">
-        </div>
-    </div>
-
-    <script>
-        function toggleMenu() {
-        var menu = document.getElementById("menu");
-        var icon = document.querySelector('.menu-icon');
-        menu.classList.toggle("active");
-        icon.classList.toggle("open");
-    }
-    </script>
-<br><br><br><br><br>
-<img src="./images/home/01.png" class="responsive-image"><br>
-<img src="./images/home/02.png" class="responsive-image"><br>
-<img src="./images/home/03.jpg" class="responsive-image"><br>
-<img src="./images/home/04.jpg" class="responsive-image"><br>
-<img src="./images/home/05.jpg" class="responsive-image"><br>
-<img src="./images/home/06.png" class="responsive-image"><br>
-
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-section">
-            <h2>About Us</h2>
-            <p>We are a leading organization in Karate-Do, providing top-notch training and events Since 1981</p>
-        </div>
-        <div class="footer-section">
-            <h2>Quick Links</h2>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./about.html" target="_blank">About Us</a></li>
-                <li><a href="https://www.wgka.in/blog" target="_blank">Events</a></li>
-                <li><a href="https://www.wgka.in/gallery" target="_blank">Gallery</a></li>
-                <li><a href="./contact.html" target="_blank">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h2>Follow Us</h2>
-            <div class="social-icons">                
-                <a href="https://www.facebook.com/subhendu.ray.165?mibextid=ZbWKwL" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/nahategojuryu" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCkRvK7TSOVxcA0qBJvSDaEg" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <main>
+            <section>
+              <div class="imageGallery">
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/01.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/02.png"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/03.png"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/04.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/05.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/06.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      src="./images/about/07.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/08.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/09.png"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/10.png"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/11.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/12.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/13.png"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/14.png"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/15.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/16.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/17.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/18.png"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/19.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/20.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/21.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/22.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/23.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/24.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/25.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/26.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/27.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/28.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/29.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/30.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+                <button>
+                  <picture>
+                    <img
+                      width="309"
+                      height="309"
+                      src="./images/about/31.jpg"
+                      loading="lazy"
+                    />
+                  </picture>
+                </button>
+              </div>
+      
+              
+       
+          <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>About Us</h2>
+                    <p>We are a leading organization in Karate-Do, providing top-notch training and events Since 1981</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./about.html" target="_blank">About Us</a></li>
+                        <li><a href="https://www.wgka.in/blog" target="_blank">Events</a></li>
+                        <li><a href="https://www.wgka.in/gallery" target="_blank">Gallery</a></li>
+                        <li><a href="./contact.html" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">                
+                        <a href="https://www.facebook.com/subhendu.ray.165?mibextid=ZbWKwL" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nahategojuryu" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCkRvK7TSOVxcA0qBJvSDaEg" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 All India Naha-Te Goju-Ryu Karate-Do Federation. All rights reserved.</p>
-    </div>
-</footer>
-
-
-
+            <div class="footer-bottom">
+                <p>&copy; 2024 All India Naha-Te Goju-Ryu Karate-Do Federation. All rights reserved.</p>
+            </div>
+        </footer>
+        
 </body>
 </html>
