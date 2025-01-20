@@ -135,6 +135,13 @@ nav ul li a:hover {
     height: auto;
 }
 
+.member {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 10px;
+}
+
 /* General image styling */
 .responsive-image {
     width: 100%; /* Default to full width */
@@ -163,6 +170,12 @@ nav ul li a:hover {
     .main-image {
         width: 90%;
         margin-bottom: 15px;
+    }
+
+    .member {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
 
     .bottom-logos {
